@@ -1,0 +1,87 @@
+.navbar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  color: #ACC1D3; }
+
+@media screen and (min-width: 341px) {
+  #logo {
+    width: 30px; }
+  #title {
+    margin-top: 10px;
+    font-size: 18px; }
+  body {
+    padding-top: 100px; }
+  .col-sm-3, .col-sm-9 {
+    display: inline-block; } }
+
+@media screen and (min-width: 548px) {
+  #logo {
+    width: 30px; }
+  #title {
+    margin-top: 10px;
+    font-size: 18px; }
+  body {
+    padding-top: 100px; }
+  .col-sm-3, .col-sm-9 {
+    display: inline-block; } }
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 750px; }
+  body {
+    padding-top: 150px; }
+  #logo {
+    width: 100px; }
+  #title {
+    margin-top: 30px;
+    font-size: 35px; } }
+
+body {
+  font-family: "Myriad Set Pro", "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
+  background-color: #DBDBDB;
+  /*padding-top: 150px;*/
+  padding-bottom: 150px; }
+
+#email_image {
+  width: 100px;
+  height: 100px;
+  margin-left: 40%;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.help-block {
+  color: #2E3F4F;
+  font-size: 12px; }
+
+#index_submit_btn, #submit_preview, #update_preview {
+  background-color: #F58229;
+  color: #FFFFFF;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 20px; }
+
+/** EDIT PREVIEW */
+.preview {
+  color: #455970;
+  padding: 10px;
+  border-radius: 10px; }
+
+.preview:hover {
+  font-weight: bold;
+  cursor: pointer;
+  color: #000;
+  background-color: #DA4747; }
+
+#update_form {
+  padding-top: 50px; }
+
+.alert {
+  margin-top: 10px; }
+
+#messages {
+  margin-top: 30px; }
+
+/*# sourceMappingURL=app.css.map */
