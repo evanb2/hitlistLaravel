@@ -2,12 +2,24 @@
 
 namespace App\Http\Controllers;
 
+use App\Submission;
 use Illuminate\Http\Request;
-use App\Http\Requests;
+use App\Http\Requests\SubmissionRequest;
 use App\Http\Controllers\Controller;
+use Carbon\Carbon;
 
 class SubmissionsController extends Controller
 {
+    /**
+     * Authentication via middleware
+     *
+     *
+     */
+    public function __construct()
+    {
+        // $this->middleware('auth', ['only' => ['create', 'edit']]);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -15,7 +27,9 @@ class SubmissionsController extends Controller
      */
     public function index()
     {
-        //
+        $submissions = Submission::latest('created_at')->get();
+
+        return view('submissions.index', compact('submissions'));
     }
 
     /**

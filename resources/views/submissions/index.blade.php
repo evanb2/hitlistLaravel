@@ -1,0 +1,34 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/index_scripts.js"></script>
+    <title>Hitlist Submission Form</title>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img src="css/img/DART_sym_lt.svg" alt="DART Logo" id="logo" />
+                </div>
+                <div class="col-sm-9">
+                    <h1 id="title">iTunes Featured Artist Form</h1>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="ajax">
+            @yield('content')
+        </div>
+    </div>
+</body>
+</html>
