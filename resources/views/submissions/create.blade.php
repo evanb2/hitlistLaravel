@@ -1,4 +1,4 @@
-@extends('hitlist')
+@extends('submissions.index')
 
 @section('content')
 
@@ -7,4 +7,5 @@
     {!! Form::close() !!}
 
     @include('errors.list')
+
 @stop
