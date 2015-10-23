@@ -16,7 +16,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">
-                    <img src="css/img/DART_sym_lt.svg" alt="DART Logo" id="logo" />
+                    <img src="/img/DART_sym_lt.svg" alt="DART Logo" id="logo" />
                 </div>
                 <div class="col-sm-9">
                     <h1 id="title">iTunes Featured Artist Form</h1>
