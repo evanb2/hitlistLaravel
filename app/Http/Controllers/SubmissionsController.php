@@ -48,9 +48,11 @@ class SubmissionsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(SubmissionRequest $request)
     {
-        //
+        Submission::create($request->all());
+
+        return redirect('submissions');
     }
 
     /**
