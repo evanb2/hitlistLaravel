@@ -52,7 +52,7 @@ class SubmissionsController extends Controller
     {
         Submission::create($request->all());
 
-        return redirect('submissions');
+        return redirect('submissions.show');
     }
 
     /**
@@ -63,7 +63,9 @@ class SubmissionsController extends Controller
      */
     public function show($id)
     {
-        //
+        $submission = Submission::findOrFail($id);
+
+        return view('submissions.show', compact('submission'));
     }
 
     /**

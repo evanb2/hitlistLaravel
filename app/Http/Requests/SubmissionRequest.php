@@ -26,11 +26,9 @@ class SubmissionRequest extends Request
         return [
             'content_type' => 'required',
             'label_name' => 'required',
-            'content_provider' => 'required',
             'upc_ean' => 'required',
             'artist_name' => 'required',
             'content_title' => 'required',
-            'media_type' => 'required',
             'genre' => 'required',
             'format' => 'required',
             'storedate' => 'required',

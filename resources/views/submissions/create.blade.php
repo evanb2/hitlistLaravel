@@ -1,4 +1,4 @@
-@extends('submissions.index')
+@extends('submissions.master')
 
 @section('content')
 

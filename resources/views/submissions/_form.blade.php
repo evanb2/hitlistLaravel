@@ -87,18 +87,11 @@
                     <option value="" selected>-Please Select-</option>
                     <option value="Album">Album</option>
                     <option value="V-Album">V-Album</option>
-                    <!-- <option value="Audiobook">Audiobook</option> -->
                     <option value="EP">EP</option>
-                    <!-- <option value="Film">Film</option> -->
-                    <!-- <option value="Ringtones">Ringtones</option> -->
-                    <!-- <option value="Music Video">Music Video</option> -->
-                    <!-- <option value="Mobile Software Application">Mobile Software Application</option> -->
-                    <!-- <option value="Playlist">Playlist</option> -->
-                    <!-- <option value="Podcast">Podcast</option> -->
-                    <!-- <option value="Concert Film">Concert Film</option> -->
                     <option value="Single">Single</option>
                     <option value="V-Single">V-Single</option>
                 </select>
+                <!-- {!! Form::select('format', ['Album' => 'Album', 'V-Album' => 'V-Album', 'class' => 'form-control']) !!} -->
             </div>
         </div>
 
