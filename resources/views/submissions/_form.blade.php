@@ -3,10 +3,10 @@
             {!! Form::label('content_type', 'Content Type: ', ['class' => 'col-sm-3 control-label']) !!}
             <div class="col-sm-9">
                 <label class="radio-inline">
-                    {!! Form::radio('content_type', 'PL', ['value' => 'PL']) !!}PL
+                    {!! Form::radio('content_type', 'PL', ['checked' => 'true']) !!}PL
                 </label>
                 <label class="radio-inline">
-                    {!! Form::radio('content_type', 'VD', ['value' => 'VD']) !!}VD
+                    {!! Form::radio('content_type', 'VD') !!}VD
                 </label>
             </div>
         </div>
@@ -117,7 +117,7 @@
         </div>
 
         <div class="form-group" id="div_release_type">
-            <label class="col-sm-3 control-label" for="release_type">Type: </label>
+            {!! Form::label('release_type', 'Release Type: ', ['class' => 'col-sm-3 control-label']) !!}
             <div class="col-sm-9">
                 <select class="form-control" id="release_type" name="release_type" type="text" required>
                     <option value="" selected>-Please Select-</option>
@@ -134,31 +134,31 @@
         </div>
 
         <div class="form-group" id="div_new_artist">
-            <label class="col-sm-3 control-label" for="new_artist">New Artist: </label>
+            {!! Form::label('new_artist', 'New Artist: ', ['class' => 'col-sm-3 control-label']) !!}
             <div class="col-sm-9">
                 <label class="radio-inline">
-                    <input type="radio" name="new_artist" value="False" checked="true" required>False
+                    {!! Form::radio('new_artist', 'False') !!}False
                 </label>
                 <label class="radio-inline">
-                    <input type="radio" name="new_artist" value="True">True
+                    {!! Form::radio('new_artist', 'True') !!}True
                 </label>
             </div>
         </div>
 
         <div class="form-group" id="div_instant_grat">
-            <label class="col-sm-3 control-label" for="instant_grat">Instant Grat: </label>
+            {!! Form::label('instant_grat', 'Instant Grat: ', ['class' => 'col-sm-3 control-label']) !!}
             <div class="col-sm-9">
                 <label class="radio-inline">
-                    <input type="radio" name="instant_grat" value="False" checked="true" required>False
+                    {!! Form::radio('instant_grat', 'False', ['checked' => 'true']) !!}False
                 </label>
                 <label class="radio-inline">
-                    <input type="radio" name="instant_grat" value="True">True
+                    {!! Form::radio('instant_grat', 'True') !!}True
                 </label>
             </div>
         </div>
 
         <div class="form-group" id="div_group_name">
-            <label class="col-sm-3 control-label" for="group_name">Group: </label>
+            {!! Form::label('group_name', 'Group Name: ', ['class' => 'col-sm-3 control-label']) !!}
             <div class="col-sm-9">
                 <select class="form-control" id="group_name" name="group_name" type="text" required>
                     <option value="" selected>-Please Select-</option>
@@ -172,11 +172,11 @@
         </div>
 
         <div class="form-group" id="div_national_forecast">
-            <label class="col-sm-3 control-label" for="national_forecast">Week 1 National Forecast: </label>
+            {!! Form::label('national_forecast', 'National Forecast: ', ['class' => 'col-sm-3 control-label']) !!}
             <div class="col-sm-9">
                 <div class="input-group">
                     <div class="input-group-addon">$</div>
-                    <input class="form-control" type="number" name="national_forecast" id="national_forecast" placeholder="100" required>
+                    {!! Form::input('number', 'national_forecast', null, ['class' => 'form-control', 'placeholder' => '100']) !!}
                     <div class="input-group-addon">.00</div>
                 </div>
                 <span class="help-block"> *required for any title being pitched for featuring on Main/Music Main</span>
@@ -281,6 +281,8 @@
             </div>
         </div>
 
-        <div class="form-group">
-            {!! Form::submit($submitBtnText, ['class' => 'btn btn-primary form-control']) !!}
+        <div class="row" id="messages">
+            <div class="col-sm-6 col-sm-offset-3">
+                {!! Form::submit($submitBtnText, ['class' => 'btn btn-default btn-lg', 'id' => 'index_submit_btn']) !!}
+            </div>
         </div>
