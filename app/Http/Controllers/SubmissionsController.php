@@ -52,7 +52,7 @@ class SubmissionsController extends Controller
     {
         Submission::create($request->all());
 
-        return view('submissions.show');
+        return redirect('submissions');
     }
 
     /**
