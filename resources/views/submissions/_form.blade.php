@@ -3,7 +3,7 @@
             {!! Form::label('content_type', 'Content Type: ', ['class' => 'col-sm-3 control-label']) !!}
             <div class="col-sm-9">
                 <label class="radio-inline">
-                    {!! Form::radio('content_type', 'PL', ['checked' => 'true']) !!}PL
+                    {!! Form::radio('content_type', 'PL', true) !!}PL
                 </label>
                 <label class="radio-inline">
                     {!! Form::radio('content_type', 'VD') !!}VD
@@ -14,7 +14,7 @@
         <div class="form-group" id="div_label_name">
             {!! Form::label('label_name', 'Label Name: ', ['class' => 'col-sm-3 control-label']) !!}
             <div class="col-sm-9">
-                {!! Form::text('label_name', null, ['class' => 'form-control', 'id' => 'label_name']) !!}
+                {!! Form::text('label_name', null, ['class' => 'form-control', 'id' => 'label_name', 'required']) !!}
             </div>
         </div>
 
@@ -130,7 +130,7 @@
             {!! Form::label('new_artist', 'New Artist: ', ['class' => 'col-sm-3 control-label']) !!}
             <div class="col-sm-9">
                 <label class="radio-inline">
-                    {!! Form::radio('new_artist', 'False') !!}False
+                    {!! Form::radio('new_artist', 'False', true) !!}False
                 </label>
                 <label class="radio-inline">
                     {!! Form::radio('new_artist', 'True') !!}True
@@ -142,7 +142,7 @@
             {!! Form::label('instant_grat', 'Instant Grat: ', ['class' => 'col-sm-3 control-label']) !!}
             <div class="col-sm-9">
                 <label class="radio-inline">
-                    {!! Form::radio('instant_grat', 'False', ['checked' => 'true']) !!}False
+                    {!! Form::radio('instant_grat', 'False', true) !!}False
                 </label>
                 <label class="radio-inline">
                     {!! Form::radio('instant_grat', 'True') !!}True

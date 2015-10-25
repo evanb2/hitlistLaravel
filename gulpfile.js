@@ -13,4 +13,9 @@ var elixir = require('laravel-elixir');
 
 elixir(function(mix) {
     mix.sass('app.scss');
+
+    mix.scripts([
+        'bootstrap-datepicker.js',
+        'index_scripts.js'
+    ], null, 'public/js');
 });
