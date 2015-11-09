@@ -3,7 +3,7 @@
 @section('content')
 
     @foreach ($submissions as $submission)
-        <h3>{{ $submission->artist_name }}</h3>
+        <a href="/submissions/{{ $submission->id }}"><h3>{{ $submission->artist_name }}</h3></a>
 
     @endforeach
 
