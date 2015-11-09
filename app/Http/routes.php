@@ -11,10 +11,6 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('hitlist');
-// });
-
 Route::resource('submissions', 'SubmissionsController');
 
 Route::controllers([

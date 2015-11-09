@@ -59,9 +59,6 @@ $(document).ready(function() {
 
     var minimum_release_date = setStartDate();
     var date_string = minimum_release_date.toString("yyyy-MM-dd");
-    // console.log(minimum_release_date);
-    // console.log(date_string);
-
 
     $('#datepicker .input-group.date').datepicker({
         format: 'yyyy-mm-dd',

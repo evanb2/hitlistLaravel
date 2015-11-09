@@ -21,7 +21,7 @@
         </div>
     </div>
 
-    <div class="form-group" id="edit_upc_ean">
+    <!-- <div class="form-group" id="edit_upc_ean">
         <label class="col-sm-4">UPC/EAN: </label>
         <div class="col-sm-8">
             <span class="preview" id="upc_ean">{{ $submission->upc_ean }}</span>
@@ -159,6 +159,6 @@
         <div class="col-sm-8">
             <span class="preview" id="marketing_drivers">{{ $submission->marketing_drivers }}</span>
         </div>
-    </div>
+    </div> -->
 
 @stop
